@@ -1,0 +1,70 @@
+/* introduce scss start */
+
+@import "var.scss";
+
+// section
+section {
+  padding: 120px 0;
+  h2 {
+    font-size: $titleFontSizeMid;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+  }
+  .bg {
+    position: relative;
+    background: url("../img/introduce/introduce_bg.png") no-repeat;
+    width: 582px;
+    height: 330px;
+    margin: 0 auto;
+    span {
+      position: absolute;
+      font-size: $fontSizeBig;
+      line-height: 32px;
+      text-align: center;
+      &:nth-child(1) {
+        top: 40%;
+        left: 10%;
+      }
+      &:nth-child(2) {
+        top: 40%;
+        right: 13%;
+      }
+    }
+  }
+  // finance style
+  .finance {
+    display: table;
+    border-top: 1px solid #ccc;
+    margin-top: 120px;
+    padding-top: 60px;
+    &:last-child {
+      margin-top: 30px;
+    }
+    .title {
+      width: 360px;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: $fontSizeMid;
+      color: $fontColorBasic;
+    }
+    .company01 {
+      width: 360px;
+      display: table-cell;
+    }
+    .company02 {
+      width: 360px;
+      display: table-cell;
+    }
+    .box {
+      margin: 40px 0;
+      p {
+        font-size: $fontSizeSmall;
+        margin-top: 10px;
+        color: $fontColorSub;
+      }
+    }
+  }
+} // section end
+
+/* introduce scss end */

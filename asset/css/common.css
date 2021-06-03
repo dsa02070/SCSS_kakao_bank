@@ -1,0 +1,150 @@
+/* common css style start */
+body {
+  padding-top: 60px;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* header area start */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  z-index: 200;
+}
+
+header #logo h1 a {
+  line-height: 60px;
+}
+
+header #logo h1 a img {
+  width: 116px;
+  height: 20px;
+}
+
+header #gnb .main_menu li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 20px;
+}
+
+header #gnb .main_menu li a {
+  font-size: 16px;
+}
+
+header #gnb .main_menu li a:hover {
+  text-decoration: underline;
+}
+
+header #gnb .submenu_wrap {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 30px 3% 30px 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #d1d1d1;
+  background: #fff;
+}
+
+header #gnb .submenu_wrap .submenu {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 40px;
+}
+
+header #gnb .submenu_wrap .submenu li {
+  text-align: center;
+  line-height: 40px;
+}
+
+header #gnb .submenu_wrap .submenu li a:hover {
+  text-decoration: underline;
+}
+
+header #gnb .submenu_wrap.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* header area end */
+/* footer area start */
+footer {
+  padding: 50px 0;
+  background: #eee;
+}
+
+footer ul li a {
+  font-size: 13px;
+  color: #666;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+footer .copyright a,
+footer .copyright span {
+  font-size: 13px;
+  color: #666;
+}
+
+footer .copyright a:last-child,
+footer .copyright span:last-child {
+  margin-left: 20px;
+}
+
+footer .footer_bottom {
+  overflow: hidden;
+}
+
+footer .footer_bottom .left {
+  float: left;
+}
+
+footer .footer_bottom .left img {
+  width: 15%;
+}
+
+footer .footer_bottom .left span {
+  font-size: 13px;
+  color: #666;
+}
+
+footer .footer_bottom .right {
+  float: right;
+}
+
+footer .footer_bottom .right img {
+  margin: 0px 10px;
+}
+
+/* footer area end */
+/* common css style end */

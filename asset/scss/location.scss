@@ -1,0 +1,44 @@
+/* location scss start */
+
+@import "var.scss";
+
+// section
+section {
+  padding: 120px 0;
+  h2 {
+    font-size: $titleFontSizeMid;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+  }
+  .map_area {
+    h3 {
+      font-size: $titleFontSizeSmall;
+      margin-bottom: 20px;
+      color: $fontColorBasic;
+    }
+    p {
+      margin-bottom: 10px;
+      color: $fontColorSub;
+      strong {
+        margin-right: 30px;
+        color: $fontColorBasic;
+      }
+    }
+    &:last-child {
+      margin-top: 120px;
+    }
+    #map01,
+    #map02 {
+      margin-top: 40px;
+      a {
+        color: red;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+  }
+} // section end
+
+/* location scss end */

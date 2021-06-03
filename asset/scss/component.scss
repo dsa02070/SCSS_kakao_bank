@@ -1,0 +1,23 @@
+@import "var.scss";
+
+/* component scss style start */
+
+.normal_btn {
+  padding: 15px 35px;
+  border-radius: 10px;
+  background: $gbtnColorBasic;
+  span {
+    font-weight: bold;
+    color: $fontColorBasic;
+  }
+  & + .normal_btn {
+    margin-left: 5px;
+  }
+}
+
+.line {
+  width: 100%;
+  background: #f9f9f9;
+  height: 40px;
+}
+/* component scss style end*/

@@ -1,0 +1,48 @@
+/* location scss start */
+section {
+  padding: 120px 0;
+}
+
+section h2 {
+  font-size: 38px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #ccc;
+}
+
+section .map_area h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+section .map_area p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+section .map_area p strong {
+  margin-right: 30px;
+  color: #111;
+}
+
+section .map_area:last-child {
+  margin-top: 120px;
+}
+
+section .map_area #map01,
+section .map_area #map02 {
+  margin-top: 40px;
+}
+
+section .map_area #map01 a,
+section .map_area #map02 a {
+  color: red;
+}
+
+section .map_area #map01 a:hover,
+section .map_area #map02 a:hover {
+  color: blue;
+}
+
+/* location scss end */
