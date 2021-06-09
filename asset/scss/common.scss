@@ -12,6 +12,7 @@ body {
   width: $siteWidth;
   margin: 0 auto;
 }
+
 .inner {
   display: flex;
   justify-content: space-between;
@@ -26,14 +27,22 @@ header {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
   background: #fff;
+  transition: 0.3s;
   z-index: 200;
+
+  .inner {
+    position: relative;
+  }
+
   #logo h1 a {
     line-height: 60px;
+
     img {
       width: 116px;
       height: 20px;
     }
   }
+
   // gnb area
   #gnb {
     .main_menu {
@@ -41,97 +50,120 @@ header {
         display: inline-block;
         line-height: 60px;
         margin: 0 20px;
+
         a {
           font-size: $fontSizeNormal;
+
           &:hover {
             text-decoration: underline;
           }
         }
       }
     }
+
     // submenu_wrap area
     .submenu_wrap {
-      display: block;
-      text-align: center;
       position: absolute;
+      overflow: hidden;
+      top: 80px;
       left: 0;
       right: 0;
       visibility: hidden;
       opacity: 0;
-      transition: 0.3s;
-      padding: 30px 3% 30px 3%;
-      box-sizing: border-box;
-      border-bottom: 1px solid #d1d1d1;
-      background: #fff;
+      transition: 0.2s;
+
       .submenu {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 40px;
+        width: 25%;
+        float: left;
+
         li {
           text-align: center;
-          line-height: 40px;
+          line-height: 50px;
+
           a {
             &:hover {
               text-decoration: underline;
+
             }
           }
         }
       }
+
       &.on {
         visibility: visible;
         opacity: 1;
       }
     }
-  } //container end
-} // header end
+  }
+
+  //container end
+}
+
+// header end
 /* header area end */
 
 /* footer area start */
 footer {
+  width: 100%;
   padding: 50px 0;
+  box-sizing: border-box;
   background: #eee;
+
   ul {
     li {
       a {
         font-size: $fontSizeSmall;
         color: $fontColorSub;
+
         &:hover {
           text-decoration: underline;
         }
       }
     }
   }
+
   .copyright {
     margin: 20px 0;
+
     a,
     span {
       font-size: $fontSizeSmall;
       color: $fontColorSub;
+
       &:last-child {
         margin-left: 20px;
       }
     }
   }
+
   .footer_bottom {
+    width: 100%;
     overflow: hidden;
+
     .left {
       float: left;
+
       img {
         width: 15%;
       }
+
       span {
         font-size: $fontSizeSmall;
         color: $fontColorSub;
       }
     }
+
     .right {
       float: right;
+
       img {
-        margin: 0px 10px;
+        margin-left: 20px;
       }
     }
   }
-} //footer end
+}
+
+//footer end
 /* footer area end */
 
 /* common css style end */

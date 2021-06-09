@@ -27,7 +27,13 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: 200;
+}
+
+header .inner {
+  position: relative;
 }
 
 header #logo h1 a {
@@ -54,31 +60,25 @@ header #gnb .main_menu li a:hover {
 }
 
 header #gnb .submenu_wrap {
-  display: block;
-  text-align: center;
   position: absolute;
+  overflow: hidden;
+  top: 80px;
   left: 0;
   right: 0;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 30px 3% 30px 3%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-bottom: 1px solid #d1d1d1;
-  background: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 header #gnb .submenu_wrap .submenu {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 40px;
+  width: 25%;
+  float: left;
 }
 
 header #gnb .submenu_wrap .submenu li {
   text-align: center;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 header #gnb .submenu_wrap .submenu li a:hover {
@@ -93,7 +93,10 @@ header #gnb .submenu_wrap.on {
 /* header area end */
 /* footer area start */
 footer {
+  width: 100%;
   padding: 50px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #eee;
 }
 
@@ -122,6 +125,7 @@ footer .copyright span:last-child {
 }
 
 footer .footer_bottom {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -143,7 +147,7 @@ footer .footer_bottom .right {
 }
 
 footer .footer_bottom .right img {
-  margin: 0px 10px;
+  margin-left: 20px;
 }
 
 /* footer area end */
