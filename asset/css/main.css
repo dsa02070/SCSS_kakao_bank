@@ -217,9 +217,17 @@ section ~ section .text_area img {
   margin: 0;
 }
 
+#fourth_type.eighth_section .kakao_card .swiper-button-next {
+  background: url("../img/main/slider-arrow-right.png") no-repeat;
+}
+
+#fourth_type.eighth_section .kakao_card .swiper-button-prev {
+  background: url("../img/main/slider-arrow-left.png") no-repeat;
+}
+
 #fourth_type.eighth_section .kakao_card .swiper-button-next,
 #fourth_type.eighth_section .kakao_card .swiper-button-prev {
-  color: white;
+  color: red;
 }
 
 #fourth_type.eighth_section .kakao_card .swiper-pagination-bullet-active {

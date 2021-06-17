@@ -96,11 +96,17 @@
   background: #111;
 }
 
+#video .swiper-button-next {
+  background: url("../img/brand/slider-arrow-right.png") no-repeat;
+}
+
+#video .swiper-button-prev {
+  background: url("../img/brand/slider-arrow-left.png") no-repeat;
+}
+
 #video .swiper-button-next,
 #video .swiper-button-prev {
   top: 35%;
-  color: #fff;
-  opacity: 1;
   z-index: 999;
 }
 
